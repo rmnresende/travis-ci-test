@@ -9,3 +9,17 @@ script:
   - docker run -e CI=true rmnresende/travis-ci-test npm run test
 
 language: generic
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-west-2"
+#   app: travis-ci-test
+#   env: "Docker-env"
+#   bucket_name: "bucket_name"
+#   bucket_path: "travis-ci-test"
+
+#   on: 
+#     branch: main
+
+# access_key_id: $AWS_ACCESS_KEY
+# secret_access_key: $AWS_SECRET_KEY
